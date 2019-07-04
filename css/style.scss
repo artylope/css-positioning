@@ -1,0 +1,138 @@
+/*
+Colors to use:
+dark blue: #06365f
+light blue: #1c5380
+*/
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#background{
+  width: 100%;
+  height: 40%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url('https://artylope.github.io/css-positioning/img/bgtile.png');
+  background-size: cover;
+  z-index: -99;
+}
+
+#phones{
+
+}
+
+.wrapper{
+  height: 100%;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  max-width: 960px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  margin-left: 20px;
+
+  .brand-login{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    justify-content: flex-start;
+    align-items: center;
+
+    .brand{
+      #instagram-logo{
+        align-items: flex-start;
+      }
+    }
+
+    .login{
+
+      button{
+
+      }
+
+    }
+  }
+
+  .content-background{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: red url('../img/frame.png');
+    background-repeat: no-repeat;
+    background-repeat: center;
+    background-position: cover;
+    padding: 30px;
+    z-index: 40;
+
+    .content{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+
+      .features{
+
+        h1{
+          font-size: 30px;
+          margin-bottom: 10px;
+        }
+
+        .description{
+          p{
+            margin-bottom: 10px;
+          }
+        }
+      }
+
+      .appbadges{
+        display: flex;
+        flex-direction: row;
+
+        #badge-ios{
+          background: url('../img/badge-iphone.png') no-repeat center;
+        }
+
+        #badge-android{
+          background: url('..//img/badge-android.png') no-repeat center;
+        }
+
+      }
+
+    }
+  }
+
+}
+
+
+
+
+
+.footer{
+  max-width: 960px;
+  nav{
+    display: inline-block;
+  }
+}

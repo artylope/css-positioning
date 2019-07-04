@@ -3,9 +3,84 @@ Colors to use:
 dark blue: #06365f
 light blue: #1c5380
 */
-
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   margin: 0;
-}
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%; }
+
+#background {
+  width: 100%;
+  height: 40%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("https://artylope.github.io/css-positioning/img/bgtile.png");
+  background-size: cover;
+  z-index: -99; }
+
+.wrapper {
+  height: 100%;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  max-width: 960px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  margin-left: 20px; }
+  .container .brand-login {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    justify-content: flex-start;
+    align-items: center; }
+    .container .brand-login .brand #instagram-logo {
+      align-items: flex-start; }
+  .container .content-background {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: red url("../img/frame.png");
+    background-repeat: no-repeat;
+    background-repeat: center;
+    background-position: cover;
+    padding: 30px;
+    z-index: 40; }
+    .container .content-background .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%; }
+      .container .content-background .content .features h1 {
+        font-size: 30px;
+        margin-bottom: 10px; }
+      .container .content-background .content .features .description p {
+        margin-bottom: 10px; }
+      .container .content-background .content .appbadges {
+        display: flex;
+        flex-direction: row; }
+        .container .content-background .content .appbadges #badge-ios {
+          background: url("../img/badge-iphone.png") no-repeat center; }
+        .container .content-background .content .appbadges #badge-android {
+          background: url("..//img/badge-android.png") no-repeat center; }
+
+.footer {
+  max-width: 960px; }
+  .footer nav {
+    display: inline-block; }
