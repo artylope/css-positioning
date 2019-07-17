@@ -38,27 +38,42 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 60%;
-  margin-left: 20px; }
+  width: 53%;
+  margin-left: 50px; }
   .container .brand-login {
     width: 100%;
     display: flex;
     flex-direction: row;
     margin-bottom: 10px;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center; }
     .container .brand-login .brand #instagram-logo {
       align-items: flex-start; }
+    .container .brand-login .login button {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      font-size: 16px;
+      border-radius: 3px;
+      color: #eee;
+      font-weight: bold;
+      background: #45769e;
+      background: linear-gradient(0deg, #45769e 0%, #6992b2 100%);
+      padding: 10px 20px;
+      border: 1px solid #295d86; }
+      .container .brand-login .login button img {
+        margin-right: 10px; }
   .container .content-background {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: red url("../img/frame.png");
+    background: url("../img/frame.png");
+    background-size: auto 100%;
     background-repeat: no-repeat;
-    background-repeat: center;
     background-position: cover;
-    padding: 30px;
+    padding: 50px;
     z-index: 40; }
     .container .content-background .content {
       display: flex;
@@ -68,17 +83,25 @@ body {
       height: 100%;
       width: 100%; }
       .container .content-background .content .features h1 {
-        font-size: 30px;
-        margin-bottom: 10px; }
+        font-size: 24px;
+        margin-bottom: 20px;
+        font-weight: bold;
+        color: #06365f;
+        line-height: 1.3; }
       .container .content-background .content .features .description p {
-        margin-bottom: 10px; }
-      .container .content-background .content .appbadges {
-        display: flex;
-        flex-direction: row; }
-        .container .content-background .content .appbadges #badge-ios {
-          background: url("../img/badge-iphone.png") no-repeat center; }
-        .container .content-background .content .appbadges #badge-android {
-          background: url("..//img/badge-android.png") no-repeat center; }
+        margin-bottom: 20px;
+        line-height: 1.4; }
+
+.appbadges {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center; }
+  .appbadges #badge-ios {
+    background: url("../img/badge-iphone.png"); }
+  .appbadges #badge-android {
+    background: url("..//img/badge-android.png"); }
 
 .footer {
   max-width: 960px; }
